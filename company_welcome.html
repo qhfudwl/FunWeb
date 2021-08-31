@@ -7,27 +7,7 @@
         <link rel="stylesheet" href="css/sub.css">
     </head>
     <body>
-        <header id="header">
-            <h1><a href="index.html">FunWeb</a></h1>
-            <nav id="membership">
-                <h2 class="hidden">멤버쉽 네비게이션</h2>
-                <ul>
-                    <li class="goLogin"><a href="#">login</a></li>
-                    <li class="goJoin"><a href="#">Join</a></li>
-                </ul>
-            </nav>
-            <nav id="gnb">
-                <h2 class="hidden">주요 이용 메뉴</h2>
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="company_welcome.html" class="on">company</a></li>
-                    <li><a href="#">solutions</a></li>
-                    <li><a href="customerCenter_notice.html">customer center</a></li>
-                    <li><a href="#">contact us</a></li>
-                </ul>
-            </nav>
-        </header>
-        <hr>
+        <?  include "header.html";  ?>
         <!-- 서브 시작 -->
         <main>
             <section id="container">
@@ -67,20 +47,6 @@
             </section>
         </main>
         <!-- 서브 끝 -->
-        <hr>
-        <div id="footerWrap">
-            <footer id="footer">
-                <div class="info">
-                    <small>All contents Copyright 2011 FunWeb Inc. all rights reserved</small>
-                    <address>Contact mail : funweb@funwebbiz.com Tel: +82 64 123 4315 Fax +82 64 123 4321</address>
-                </div>
-                <div class="sns">
-                    <ul>
-                        <li class="facebook"><a href="https://www.facebook.com/">facebook 링크</a></li>
-                        <li class="twitter"><a href="https://twitter.com/">twitter 링크</a></li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
+        <?  include "footer.html";  ?>
     </body>
 </html>
