@@ -1,0 +1,162 @@
+/* 변경사항 시작 ---------- */
+/* header */
+#header {height: 160px;}
+#header h1 {padding-top: 77px;}
+/* 주요메뉴 */
+#gnb {top: 93px;}
+/* 변경사항 끝 ---------- */
+/* 서브 본문 ---------- */
+/* header */
+#subHeader {
+    height: 300px; text-align: center; position: relative;
+    background: #695b56 no-repeat center / cover;
+    width: 100vw; display: table-cell; vertical-align: middle;
+}
+#subHeader::before {
+    content: "";
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+#subHeader h2 {
+    color: white; font-size: 100px; text-transform: uppercase;
+    position: relative; top: 0; left: 0;
+    font-family: twayair; letter-spacing: 20px;
+}
+/* subWrap */
+#subWrap {width: 1000px; margin: 30px auto 0;}
+#subWrap::after {content: ""; clear: both; display: block;}
+/* sub menu */
+#snb {width: 250px; float: left; text-transform: uppercase;}
+#snb h3 {
+    height: 95px; margin-bottom: 15px;
+    text-align: center;
+    line-height: 95px; font-size: 30px;
+    /* display: table-cell; vertical-align: middle; */
+    background: #3c3c3c; color: white;
+}
+#snb ul li a {
+    display: block; height: 49px; line-height: 50px;
+/*
+    최근에는 box-sizing 때문에 괜찮아졌지만 익스플로러 같은 경우에는
+    아직 box-sizing 적용이 안될 수 있기 때문에 높이는 border 높이를
+    빼고난 후의 높이를 입력해준다.
+
+    li에 높이를 따로 안준 이유는 float속성이 있다면 넣어줘야하지만
+    지금은 따로 float 속성을 준 것이 아니기 때문에 굳이 넣어 줄 필요 없다.
+*/
+    text-indent: 22px; background: url(../images/bulletSnb.png) no-repeat 230px;
+    border-bottom: 1px solid #b6bbc5;
+}
+#snb ul li a:hover {
+    color: #ff7900; background-image: url(../images/bulletSnbOver.png);
+    border-bottom-color: #ff7900;
+}
+#snb ul li a.on {
+    color: #ff7900; background-image: url(../images/bulletSnbOver.png);
+    border-bottom-color: #ff7900;
+}
+/* article - heading*/
+#subContent {width: 710px; float: right;}
+#subContent h3 {
+    color: #cacbcd;
+    /* font-weight: normal; font-size: 40px; font-family: "Times New Roman", serif; */
+    font: 40px "Times New Roman", serif;
+/*
+    원래 normal 이 아니어도 한 줄에 적게 되는 경우에는 normal 로 값이 들어가기 때문에
+    화면에 normal 이 적용이 되서 나온다.
+*/
+    text-shadow: 1px 1px #696969; text-transform: capitalize;
+    margin-bottom: 10px;
+}
+/* article - 본문 */
+#subContent figure {float: right; margin: 0 0 15px 10px; text-align: center;}
+#subContent p {margin-bottom: 15px;}
+/* 서브 페이지 개별 */
+/* company_welcome */
+/* 배경 */
+#subHeader.subHeaderCompany {background-image: url(../images/subTitleCompany.jpg) ;}
+.subContentCompany {padding: 0 20px 0 45px;}
+/*
+    padding을 넣어도 안밀리는 이유
+    div 가 블락요소인데 지금 현재 너비 값을 주지않았다.
+    그렇게되면 부모 요소의 너비를 그대로 상속받는 것이 아닌, 안의 모든 값을
+    포함해서 부모 너비가 되도록 한다.
+*/
+/* customercenter_notice */
+/*
+table 은 바깥 셀과 안쪽 셀과의 여백이 기본값으로 있기 때문에
+속성을 변경해준다.
+*/
+/* 배경 */
+#subHeader.subHeaderCustomer {background-image: url(../images/subTitleCustomer.jpg);}
+/* 서브 메뉴 헤더 */
+#snb .snbTitleCustomer {padding-top: 10px; box-sizing: border-box; line-height: 1.2em;}
+/* 테이블 */
+#notice {width: 660px;}
+/*
+thead 와 tbody, tr 같은 경우는 단순히 영역을 구분지어주기 위한 용도이다.
+그래서 모양을 적용시키지 말자!!
+*/
+#notice thead {height: 30px;}
+#notice thead th {
+    height: 30px; font-weight: normal; text-transform: capitalize;
+    background: linear-gradient(180deg, #65aef3 0%, #2d80ea 100%); color: #fff;
+}
+#notice thead th.no {width: 56px; border-radius: 5px 0 0 5px;}
+#notice thead th.title {width: 376px; letter-spacing: 0.5em;}
+#notice thead th.write {width: 100px;}
+#notice thead th.date {width: 72px;}
+#notice thead th.read {width: 56px; border-radius: 0 5px 5px 0;}
+#notice tbody td {
+    text-align: center; padding: 5px 0; border-bottom: 1px solid #989a97;
+}
+#notice tbody td.listTitle {text-align: left;}
+/* #notice tbody tr td:nth-child(2) {text-align: left;} */
+/* 만약 하이퍼 링크로 걸거라면 그냥 a 태그에 display: block 을 해서 하면 된다. */
+/* 
+    td 에 a 태그와 같이 속성을 적용해서 할 경우 셀의 속성이 우선순위가 높으므로
+    모양이 이상하게 어그러진다.
+*/
+/* #notice tbody tr td:nth-child(2) {
+    width: 376px; display: block;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+} */
+/* 너비 값을 반드시 넣어야한다!!! */
+#notice tbody td div {
+    width: 376px; 
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+/* form 태그 */
+/* 
+    input 요소들은 인라인 요소이기 때문에 text-align으로 줘도 된다.
+    (다른요소에 영향을 끼치는 것이 없다) 
+*/
+.noticeSearch {text-align: right; margin: 16px 45px 35px 0;}
+.noticeSearch #searchBox {
+    width: 220px; height: 20px; border-radius: 10px;
+    border: 1px solid #000; background: #fefced;
+    text-indent: 10px;
+}
+.noticeSearch #searchBox:focus {
+    border: 1px solid #2d80ea; background: #b9ffb9;
+    outline: none;
+}
+/*
+    type="button" 들은 넓이에 이미 border 높이, 너비까지 포함되어 있다.
+    그래서 text와 같은 높이를 주고 싶다면 border높이인 2px을 더해줘야한다.
+*/
+.noticeSearch #searchBtn {
+    width: 88px; height: 22px; border-radius: 10px;
+    background: linear-gradient(180deg, #65aef3 0%, #2d80ea 100%); color: #fff;
+    border: 1px solid #000;
+}
+.noticeSearch #searchBtn:active {
+    background: linear-gradient(180deg, #a8ff78 0%, #78ffd6 100%);
+}
+/* page 넘기기 */
+/*
+    위의 표도 margin-right: 45px; 값을 줬기 때문에 중앙을 맞추려면 똑같이 준다.
+    혹은 div 에다가 그냥 660px의 너비를 준다.
+*/
+#noticePage {margin-right: 45px; text-align: center;}
+#noticePage a {margin: 0 13px; color: #333;}

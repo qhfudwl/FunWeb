@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* 슬라이더 */
+#slider {
+    background: #695b56 url(../images/bgslider.jpg) no-repeat center / cover;
+    text-align: center; color: white; height: 363px;
+    /* display: table-cell; vertical-align: middle; */
+    position: relative; font-family: twayair;
+}
+/* before는 너비, 높이가 없으면 영역을 가지지 못한다. */
+/* position: absolute를 넣으면 자기 영역을 가지려는 성질이 있어서 display: block 없어도 된다. */
+#slider::before {
+    content: ""; background-color: rgba(0, 0, 0, 0.5);
+    height: 100%; width: 100%; position: absolute; top: 0; left: 0;
+}
+/* 현재 위치에서 ::before 보다 위에 가야하기 때문에 position:relative를 넣는다 */
+#slider p {
+    text-transform: uppercase; font-size: 60px; text-shadow: 2px 2px 2px black;
+    padding: 70px 0 30px; position: relative;
+     /* margin-bottom: 40px; */
+}
+#slider a {
+    text-transform: capitalize; color: white; background: red;
+    display: block; width: 155px; line-height: 40px; margin: 0 auto; position: relative;
+}
+#slider a:hover {background: #00ff80;}
+/* 본문 */
+/* 솔루션 */
+#solutionWrap {background: #ebebeb;}
+#solution {
+    width: 930px; margin: 0 auto; padding: 83px 35px 50px; overflow: hidden;
+}
+#solution .solution {
+    width: 310px; background: url(../images/bgSolution.png) no-repeat;
+    float: left;
+}
+/* 배경이미지가 제대로 보여지려면 왼쪽으로 310px만큼 가야하기 때문에 (-)로 적어준다. */
+/* 아래 3가지 경우 다 가능 */
+#solution .security {
+    /* background-position-x: -310px; */
+    /* background-position-x: 50%; */
+    background-position-x: center;
+}
+#solution .payment {
+    /* background-position-x: -620px; */
+    /* background-position-x: 100%; */
+    background-position-x: right;
+}
+#solution .solution a {display: block; padding: 0 34px 0 100px;}
+#solution .solution a h3 {font-size: 16px;}
+#solution .solution a p {font-size: 14px;}
+/* Security News, News & Notice */
+/* 자식태그에 float을 적용시켰다면 반드시 영향을 받지 않도록 overflow:hidden을 넣어주자 */
+#board {width: 1000px; margin: 32px auto 0; overflow: hidden;}
+/* 반드시 자식선택자를 적어주자 */
+#board > section {
+    width: 420px; overflow: hidden; float: left;
+}
+#board > section > h3 {
+    font-style: italic; text-indent: 25px; font-size: 14px; height: 21px;
+    background: url(../images/bgBoard.png) no-repeat;
+    line-height: 25px;
+}
+/* Security News */
+#sec_news {margin: 0 80px 0 40px;}
+#sec_news h3 {margin-bottom: 18px;}
+#sec_news h3 span {color: #f26555;}
+#sec_news a {color: #333;}
+#sec_news a dl {margin-left: 5px;}
+#sec_news a dl dt {font: bold 16px 'Book Antiqua', serif; color: red; margin: 5px 0;}
+#sec_news a dl dd {font-size: 13px; line-height: 16px;}
+/* News & Notice */
+#notice h3 {color: #827b00; margin-bottom: 22px;}
+#notice ul {font-size: 14px;}
+/* 반드시 height와 line-height를 둘 다 줘야한다. */
+#notice ul li {
+    border-bottom: 1px dotted #535353; height: 26px; line-height: 26px;
+    background: url(../images/bulletNotice.gif) no-repeat left;
+    text-indent: 15px; margin-right: 20px;
+}
+#notice ul li:hover {text-decoration: underline;}
+#notice ul li a {float: left;}
+#notice ul li span {float: right;}

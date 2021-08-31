@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>FunWeb company</title>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/sub.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1><a href="index.html">FunWeb</a></h1>
+            <nav id="membership">
+                <h2 class="hidden">멤버쉽 네비게이션</h2>
+                <ul>
+                    <li class="goLogin"><a href="#">login</a></li>
+                    <li class="goJoin"><a href="#">Join</a></li>
+                </ul>
+            </nav>
+            <nav id="gnb">
+                <h2 class="hidden">주요 이용 메뉴</h2>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="company_welcome.html">company</a></li>
+                    <li><a href="#">solutions</a></li>
+                    <li><a href="customerCenter_notice.html" class="on">customer center</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <!-- 서브 시작 -->
+        <main>
+            <section id="container">
+                <header id="subHeader" class="subHeaderCustomer">
+                    <h2>customer center</h2>
+                </header>
+                <div id="subWrap">
+                    <nav id="snb">
+                        <h3 class="snbTitleCustomer">customer<br>center<span class="hidden"> sub menu</span></h3>
+                        <ul>
+                            <li><a href="#" class="on">notice</a></li>
+                            <li><a href="#">public news</a></li>
+                            <li><a href="#">driver download</a></li>
+                            <li><a href="#">service policy</a></li>
+                        </ul>
+                    </nav>
+                    <article id="subContent">
+                        <h3>notice</h3>
+                        <div id="subContentCustomer">
+                            <table id="notice">
+                                <!-- 각 게시판의 내용이 다를지도 모르기 때문에 넣어야한다. -->
+                                <caption class="hidden">공지사항</caption>
+                                <thead>
+                                    <th scope="col" class="no">no.</th>
+                                    <th scope="col" class="title">title</th>
+                                    <th scope="col" class="writer">writer</th>
+                                    <th scope="col" class="date">date</th>
+                                    <th scope="col" class="read">read</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <!--
+                                        headers를 안 넣어도 되는 이유
+                                        : 게시판에서는 줄 번호 타이틀 저자 ... 등이 쭉 나오기
+                                        때문에 쭉 읽어준다. 그래서 굳이 headers를 넣을 필요 없다.
+                                        -->
+                                        <td>15</td>
+                                        <td class="listTitle"><div>eget vehicula metus. In euismod sollicitudin lorem eu aliquet.</div></td>
+                                        <td>Host Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>15000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td class="listTitle"><div>Lorem Ipsum dolor sit amet, consectetur adipixcing elit.</div></td>
+                                        <td>Sec Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>1500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td class="listTitle"><div>Vivamus viverra porttitor commodo.</div></td>
+                                        <td>Sec Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td class="listTitle"><div>In pulvinar fermentum erat a tincidunt. Nulla id magna sit lorem eu aliquet.</div></td>
+                                        <td>Web Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td class="listTitle"><div>Lorem Ipsum dolor sit amet, consectetur adipixcing elit.</div></td>
+                                        <td>Web Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>150</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td class="listTitle"><div>Lorem Ipsum dolor sit amet, consectetur adipixcing elit.</div></td>
+                                        <td>Web Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>15000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td class="listTitle"><div>Vivamus viverra porttitor commodo.</div></td>
+                                        <td>Web Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>150</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td class="listTitle"><div>In pulvinar fermentum erat a tincidunt. Nulla id magna sit lorem eu aliquet.</div></td>
+                                        <td>Sec Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>15000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td class="listTitle"><div>Lorem Ipsum dolor sit amet, consectetur adipixcing elit.</div></td>
+                                        <td>Host Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>150</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td class="listTitle"><div>Vivamus viverra porttitor commodo.</div></td>
+                                        <td>Host Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="listTitle"><div>eget vehicula metus. In euismod sollicitudin lorem eu aliquet.</div></td>
+                                        <td>Host Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>15000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="listTitle"><div>Lorem Ipsum dolor sit amet, consectetur adipixcing elit.</div></td>
+                                        <td>Sec Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>1500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="listTitle"><div>Vivamus viverra porttitor commodo.</div></td>
+                                        <td>Sec Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="listTitle"><div>In pulvinar fermentum erat a tincidunt. Nulla id magna sit lorem eu aliquet.</div></td>
+                                        <td>Web Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="listTitle"><div>Lorem Ipsum dolor sit amet, consectetur adipixcing elit.</div></td>
+                                        <td>Web Admin</td>
+                                        <td>2011.05.11</td>
+                                        <td>150</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <form class="noticeSearch">
+                                <!--
+                                    form 태그의 제목과 각 부분의 label을 꼭 적어주자
+                                    fieldset 도 반드시 적어줄 것!!!
+                                -->
+                                <fieldset>
+                                    <legend class="hidden">공지사항 검색</legend>
+                                    <label for="serchBox" class="hidden">검색어 입력창</label>
+                                    <input type="text" id="searchBox" placeholder="검색어를 입력하세요.">
+                                    <label for="searchBtn" class="hidden">검색 버튼</label>
+                                    <input type="submit" id="searchBtn" value="Search">
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div id="noticePage">
+                            <a href="#">Prev</a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                            <a href="#">10</a>
+                            <a href="#">Next</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <!-- 서브 끝 -->
+        <hr>
+        <div id="footerWrap">
+            <footer id="footer">
+                <div class="info">
+                    <small>All contents Copyright 2011 FunWeb Inc. all rights reserved</small>
+                    <address>Contact mail : funweb@funwebbiz.com Tel: +82 64 123 4315 Fax +82 64 123 4321</address>
+                </div>
+                <div class="sns">
+                    <ul>
+                        <li class="facebook"><a href="https://www.facebook.com/">facebook 링크</a></li>
+                        <li class="twitter"><a href="https://twitter.com/">twitter 링크</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

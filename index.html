@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>FunWeb</title>
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1><a href="index.html">FunWeb</a></h1>
+            <nav id="membership">
+                <h2 class="hidden">멤버쉽 네비게이션</h2>
+                <ul>
+                    <li class="goLogin"><a href="#">login</a></li>
+                    <li class="goJoin"><a href="#">Join</a></li>
+                </ul>
+            </nav>
+            <nav id="gnb">
+                <h2 class="hidden">주요 이용 메뉴</h2>
+                <ul>
+                    <li><a href="index.html" class="on">home</a></li>
+                    <li><a href="company_welcome.html">company</a></li>
+                    <li><a href="#">solutions</a></li>
+                    <li><a href="customerCenter_notice.html">customer center</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <section id="slider">
+            <h2 class="hidden">slogan</h2>
+            <p>our job is to make <br>you look good</p>
+            <a href="#">contact us</a>
+        </section>
+        <hr>
+        <main>
+            <div id="solutionWrap">
+                <section id="solution">
+                    <h2 class="hidden">solutions</h2>
+                    <!-- 독립적인 요소라고 했는데 이 한개의 내용만으로 충분히 사용될 수 있는 것 -->
+                    <article class="hosting solution">
+                        <a href="#">
+                            <h3>Web Hosting Solution</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nunc urna, fringilla non fringilla ut, lacinia eu urna. Aliquam nec urna at nisi pulvinar eleifend. Duis commodo luctus leo vitae feugiat. Curabitur ac sodales ante. Ut vel est </p>
+                        </a>
+                    </article>
+                    <article class="security solution">
+                        <a href="#">
+                            <h3>Web Security Solution</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Curabitur nunc urna, fringilla non fringilla ut, lacinia eu urna. Aliquam nec urna at nisi pulvinar eleifend. Duis commodo luctus leo vitae feugiat. Curabitur ac sodales ante. Ut vel est </p>
+                        </a>
+                    </article>
+                    <article class="payment solution">
+                        <a href="#">
+                            <h3>Web payment Solution</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nunc urna, fringilla non fringilla ut, lacinia eu urna. Aliquam nec urna at nisi pulvinar eleifend. Duis commodo luctus leo vitae feugiat. Curabitur ac sodales ante. Ut vel est</p>
+                        </a>
+                    </article>
+                </section>
+            </div>
+            <section id="board">
+                <h2 class="hidden">customer center</h2>
+                <section id="sec_news">
+                    <h3><span>Security</span> News</h3>
+                    <a href="#">
+                        <dl>
+                            <dt>Vivamus id ligula velit, quis euismod nisi</dt>
+                            <dd>Proin quis ante eget arcu tempus tempus porta vel ipsum. Quisque vitae nulla vel lorem cursus dignissim. Sed sit amet metus tortor. In hac habitasse platea dictumst. Aliquam erat volutpat. Aliquam massa risus, </dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <dl>
+                            <dt>Vivamus id ligula velit, quis euismod nisi</dt>
+                            <dd>Proin quis ante eget arcu tempus tempus porta vel ipsum. Quisque vitae nulla vel lorem cursus dignissim. Sed sit amet metus tortor. In hac habitasse platea dictumst. Aliquam erat volutpat. Aliquam massa risus,  </dd>
+                        </dl>
+                    </a>
+                </section>
+                <section id="notice">
+                    <h3>News &amp; Notice</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Vivamus id ligula velit, quis euismod nisi</a>
+                            <span>2011.07.31</span>
+                        </li>
+                        <li>
+                            <a href="#">Fusce eros augue, tempus nec interdum eu</a>
+                            <span>2020.12.31</span>
+                        </li>
+                        <li>
+                            <a href="#">Donec eget tincidunt purus</a>
+                            <span>2020.12.31</span>
+                        </li>
+                        <li>
+                            <a href="#">Nam facilisis mauris in dui suscipit volutpat</a>
+                            <span>2020.12.31</span>
+                        </li>
+                        <li>
+                            <a href="#">Aenean in dui mollis leo ullamcorper fringilla</a>
+                            <span>2020.12.31</span>
+                            <!-- time datetime 은 아주 중요한 시간
+                            여기서는 그냥 기사 날짜이지 중요하진 않다 -->
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </main>
+        <hr>
+        <!-- 100% 짜리 너비 -->
+        <div id="footerWrap">
+            <!-- 너비가 1000px 인 것 -->
+            <footer id="footer">
+                <!-- 좌, 우측 배열할 것 -->
+                <div class="info">
+                    <small>All contents Copyright 2011 FunWeb Inc. all rights reserved</small>
+                    <address>Contact mail : funweb@funwebbiz.com Tel: +82 64 123 4315 Fax +82 64 123 4321</address>
+                </div>
+                <div class="sns">
+                    <ul>
+                        <li class="facebook"><a href="https://www.facebook.com/">facebook 링크</a></li>
+                        <li class="twitter"><a href="https://twitter.com/">twitter 링크</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
